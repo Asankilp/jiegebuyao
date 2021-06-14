@@ -137,5 +137,5 @@
     scene awei diandong
     with fade
     "几天前。"
-    call ch2
+    call ch2 from _call_ch2_1
     return

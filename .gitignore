@@ -136,3 +136,4 @@ log.txt
 .android.json
 errors.txt
 traceback.txt
+*.bak

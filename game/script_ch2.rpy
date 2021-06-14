@@ -384,7 +384,7 @@ label xuexiao:
     "放学后。"
     "淑惠走向了阿伟。"
     s "你阿嬷跟我说，你和彬彬在一床睡觉？这是怎么回事呢？"
-    if gotowangba = 0:
+    if gotowangba == 0:
         w "不要管我啦！"
         play sound "audio/runaway.ogg"
         scene black

@@ -11,7 +11,7 @@ label start:
     define wn = Character("阿伟", kind=nvl)
     define x = Character("美雪")
     if not persistent.passed:
-        call ch1
+        call ch1 from _call_ch1
     if persistent.passed == True:
         with fade
         unk "何必如此。"
@@ -21,7 +21,7 @@ label start:
             "是。":
                 unk "好吧。"
                 unk "那么，继续如往常运行。"
-                call ch1
+                call ch1 from _call_ch1_1
             "否。":
                 unk "那么，由你改写两人的命运。"
                 $ secondrun = 1
@@ -33,5 +33,5 @@ label start:
                 window show
                 scene awei diandong
                 with fade
-                call ch2
+                call ch2 from _call_ch2
 return
