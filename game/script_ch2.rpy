@@ -372,6 +372,7 @@ label wuwai:
     "但那痛苦的遭遇，始终刻在阿伟心灵的一角，永远不可磨灭......"
     "Normal End"
     $ persistent.passed = True
+    return
 label xuexiao:
     scene xuexiao
     with fade
