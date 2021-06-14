@@ -1,4 +1,5 @@
 ﻿label ch1:
+    $ secondrun = 0
     with dissolve
     $ renpy.movie_cutscene("op.mp4")
     scene toilet

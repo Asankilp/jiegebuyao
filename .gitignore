@@ -128,8 +128,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+#Ren'Py
 *.rpyc
 saves/
-game/cache/
+/game/cache/*.*
 log.txt
-android.json
+.android.json
+errors.txt
+traceback.txt
