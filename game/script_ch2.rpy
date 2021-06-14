@@ -376,6 +376,7 @@ label wuwai:
 label xuexiao:
     scene xuexiao
     with fade
+    play music "audio/bird.ogg"
     "第二天，早上。"
     "阿伟和彬彬一起去了学校。"
     with fade
