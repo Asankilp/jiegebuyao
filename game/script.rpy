@@ -12,6 +12,7 @@ label start:
     define x = Character("美雪")
     if not persistent.passed:
         call ch1 from _call_ch1
+        return
     if persistent.passed == True:
         with fade
         unk "何必如此。"
