@@ -27,16 +27,16 @@ jobs:
 
       # Runs a single command using the runners shell
       -  id: build
-      - name: Build VN project
-        uses: ProjectAliceDev/renpy-build-action@master
-        with:
-          sdk-version: '7.5.3'
-          project-dir: '.'
-          package: 'android'
-          dir: 'output'
-        env:
-          SDL_AUDIODRIVER: dummy
-          SDL_VIDEODRIVER: dummy
+         name: Build VN project
+         uses: ProjectAliceDev/renpy-build-action@master
+         with:
+           sdk-version: '7.5.3'
+           project-dir: '.'
+           package: 'android'
+           dir: 'output'
+         env:
+           SDL_AUDIODRIVER: dummy
+           SDL_VIDEODRIVER: dummy
       - name: ls
         run: ls -a
   upload:
