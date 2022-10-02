@@ -32,19 +32,14 @@ jobs:
          with:
            sdk-version: '7.5.3'
            project-dir: '.'
-           package: 'android'
-           dir: 'output'
+           package: ''
+
          env:
            SDL_AUDIODRIVER: dummy
            SDL_VIDEODRIVER: dummy
       - name: ls
         run: ls -a
       - uses: actions/upload-artifact@v3
-
-
         with:
-
-          name: jiegebuyao
-
-          path: ${{steps.build.outputs.dir}}
- 
+         name: jiegebuyao
+         path: ${{steps.build.outputs.dir}}
