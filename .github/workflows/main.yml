@@ -36,6 +36,8 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
+      - name: ls
+        run: ls -a
       - uses: actions/upload-artifact@v3
         with:
           name: jiegebuyao
