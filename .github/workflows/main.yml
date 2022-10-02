@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
+      -  id: build
       - name: Build VN project
         uses: ProjectAliceDev/renpy-build-action@master
         with:
@@ -38,8 +39,11 @@ jobs:
           SDL_VIDEODRIVER: dummy
       - name: ls
         run: ls -a
-      - uses: actions/upload-artifact@v3
-        with:
-          name: jiegebuyao
-          path: dists/ # or path/to/artifact
+  upload:
+      runs-on: ubuntul-latest
+      steps:
+        - uses: actions/upload-artifact@v3
+          with:
+            name: jiegebuyao
+            path: ${{jobs.build.steps.build.outputs.dir}}# or path/to/artifact
       # Runs a set of commands using the runners shell
