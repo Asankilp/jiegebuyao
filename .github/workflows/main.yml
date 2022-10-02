@@ -40,11 +40,11 @@ jobs:
       - name: ls
         run: ls -a
   upload:
-      runs-on: ubuntu-latest
-      needs: build
-      steps:
-        - uses: actions/upload-artifact@v3
-          with:
-            name: jiegebuyao
-            path: ${{jobs.build.steps.build.outputs.dir}}# or path/to/artifact
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/upload-artifact@v3
+        with:
+          name: jiegebuyao
+          path: ${{jobs.build.steps.build.outputs.dir}}# or path/to/artifact
       # Runs a set of commands using the runners shell
