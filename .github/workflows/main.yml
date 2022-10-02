@@ -27,12 +27,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build VN project
-      uses: ProjectAliceDev/renpy-build-action@master
-      with:
-        sdk-version: '7.5.3'
-        project-dir: '.'
-      env:
-        SDL_AUDIODRIVER: dummy
-        SDL_VIDEODRIVER: dummy
+        uses: ProjectAliceDev/renpy-build-action@master
+        with:
+          sdk-version: '7.5.3'
+          project-dir: '.'
+        env:
+          SDL_AUDIODRIVER: dummy
+          SDL_VIDEODRIVER: dummy
 
       # Runs a set of commands using the runners shell
