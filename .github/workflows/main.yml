@@ -31,8 +31,13 @@ jobs:
         with:
           sdk-version: '7.5.3'
           project-dir: '.'
+          package: 'android'
+          dir: 'output'
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
-
+      - uses: actions/upload-artifact@v3
+        with:
+          name: jiegebuyao
+          path: output/ # or path/to/artifact
       # Runs a set of commands using the runners shell
