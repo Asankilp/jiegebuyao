@@ -39,5 +39,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: jiegebuyao
-          path: ${{ outputs.dir }} # or path/to/artifact
+          path: dists/ # or path/to/artifact
       # Runs a set of commands using the runners shell
