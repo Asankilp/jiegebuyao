@@ -46,5 +46,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: jiegebuyao
-          path: ${{jobs.build.steps.build.outputs.dir}}# or path/to/artifact
+          path: ${{needs.build.steps.build.outputs.dir}}# or path/to/artifact
       # Runs a set of commands using the runners shell
